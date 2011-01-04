@@ -32,6 +32,7 @@ class Evaluator {
     static function not_($bool) { return !$bool; }
     static function and_($l, $r) { return ($l && $r); }
     static function or_($l, $r) { return ($l && $r); }
+    static function in($l, $r) { return in_array($l,$r); }
 
     # Currently only support single expression with no preceddence ,no boolean expression
     #    [expression] =  [optional binary] ? operant [ optional compare operant]
